@@ -3,6 +3,7 @@ package com.paycoweberrorsample;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.iamport.IamportPackage;
 import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
 import com.babisoft.ReactNativeLocalization.ReactNativeLocalizationPackage;
 import com.facebook.react.ReactNativeHost;
@@ -25,6 +26,7 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+            new IamportPackage(),
             new RNGestureHandlerPackage(),
             new ReactNativeLocalizationPackage()
       );

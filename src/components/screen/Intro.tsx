@@ -116,13 +116,13 @@ class Page extends Component<IProps, IState> {
         </View>
         <View style={styles.btnBottomWrapper}>
           <Button
-            isLoading={this.state.isLoggingIn}
-            onPress={this.onLogin}
-            style={styles.btnLogin}
-            textStyle={styles.txtLogin}
-            imgLeftSrc={IC_MASK}
-            imgLeftStyle={styles.imgBtn}
-          >{getString('LOGIN')}</Button>
+              isLoading={this.state.isLoggingIn}
+              onPress={() => this.props.navigation.navigate('Iamport') }
+              style={styles.btnLogin}
+              textStyle={styles.txtLogin}
+              imgLeftSrc={IC_MASK}
+              imgLeftStyle={styles.imgBtn}
+          >결제 테스트</Button>
           <Button
             onPress={() => this.props.navigation.navigate('NotFound') }
             style={[

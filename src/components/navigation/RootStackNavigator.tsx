@@ -6,6 +6,7 @@ import { colors } from '../../utils/Styles';
 import appStore from '../../stores/appStore';
 import IntroScreen from '../screen/Intro';
 import NotFoundScreen from '../screen/NotFound';
+import IamportScreen from '../screen/Iamport';
 
 const routeConfig = {
   Intro: {
@@ -18,6 +19,10 @@ const routeConfig = {
   NotFound: {
     screen: NotFoundScreen,
     path: 'NotFound',
+  },
+  Iamport: {
+    screen: IamportScreen,
+    path: 'IamportScreen',
   },
 };
 

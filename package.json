@@ -33,6 +33,7 @@
     "build:android": "react-native bundle --entry-file index.js --platform android --dev false --bundle-output android/main.jsbundle --assets-dest ./android"
   },
   "dependencies": {
+    "iamport-react-native": "^1.0.5",
     "mobx": "^5.8.0",
     "mobx-react": "^5.4.3",
     "moment": "^2.23.0",
